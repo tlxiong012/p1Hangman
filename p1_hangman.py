@@ -34,7 +34,7 @@ if __name__=='__main__':
     print("Welcome to Hangman")
     while (len(letters_to_guess)>0)and num_guesses<6:
         guess = ask_user_for_next_letter()
-        guess = guess.lower(guess)
+        guess = guess.lower()
         
         if guess in correct_letters_guessed or incorrect_letters_guessed:
             print("you have guessed that letter already :|")
